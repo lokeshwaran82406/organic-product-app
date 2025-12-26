@@ -1,0 +1,83 @@
+@font-face{
+    font-family: "Orbito";
+    src: url("/Orbito.otf");
+}
+*{
+    margin: 0;
+}
+/* home */
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: cornsilk;
+    background: url(home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.home>section{
+    height: 110px;
+    width: 85%;
+    /* background-color: aliceblue; */
+}
+section>header{
+    height: 35%;
+    width: 100%;
+    background-color: rgba(78,78,78,0.352);
+    backdrop-filter: blur(3px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header>.header-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a{
+        display: flex;
+        gap: 10px;
+        color: white;
+        text-decoration: none;
+    }
+}
+section>nav{
+    height:65% ;
+    width: 100%;
+    background-color: limegreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav>.nav-items{
+    width: 50%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+}
+.bi{
+    display: inline-block;
+}
+nav a:hover:not(a:nth-child(5))
+.bi{
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+section>p{
+    width: 600%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
